@@ -94,9 +94,9 @@ function delete_token($filename,$token){
     return 1;
 }
 function create_token() {
-    return md5(uniqid(mt_rand(), true));//create 32-symbols id (128-bits hex number)
+    return md5(uniqid(mt_rand(), true));//create 32-symbols id (128-bits hex number),hash
 }
 function create_password_hash($password){
-    return hash("sha256",$password);//create 32-symbols id (128-bits hex number)
+    return hash("sha256",$password);
 }
 ?>
