@@ -39,7 +39,7 @@ if (isset($_POST["login"])&&isset($_POST["password"])&&isset($_POST["repeat_pass
                 <legend>Registration</legend>
                 <div align="center">
                     <?php
-                        /*Use regular expressions for validate(not use _\. first symbol must be a char*/
+                        /*Use regular expressions for validate(not use _\. first symbol must be a char)*/
                     ?>
                 <p><input id="login" name="login" type="text" placeholder="username" maxlength="10" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,}$" required></p>
                     </div>
