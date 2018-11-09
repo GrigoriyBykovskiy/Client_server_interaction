@@ -34,9 +34,11 @@ if (!isset($_COOKIE["token"])) {
             <fieldset>
                 <legend>Authorization</legend>
                 <div align="center">
+			/*Use regular expressions for validate(not use _\. first symbol must be a char)*/
                 <p><input id="login" name="login" type="text" placeholder="username" maxlength="10" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,}$" required></p>
                     </div>
                 <div align="center">
+			/*Use regular expressions for validate(not use _\. && use lowercase and uppercase letters, numbers)*/
                 <p><input id="password" name="password" type="password" placeholder="password" maxlength="15" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{4,}$" required></p>
                     </div>
                 <div align="center">
